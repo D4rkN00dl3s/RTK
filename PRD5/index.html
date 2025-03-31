@@ -18,13 +18,40 @@
         <div class="col">
           <h2>Fetch Data from API</h2>
           <hr>
+          <div class="row align-items-center justify-content-center mb-3">
+            <div class="col-md-5">
+              <label for="familySelect1" class="form-label">Select First Family:</label>
+              <select id="familySelect1" class="form-select">
+                <option value="Rosaceae">Rosaceae</option>
+                <option value="Rutaceae">Rutaceae</option>
+                <option value="Solanaceae">Solanaceae</option>
+                <option value="Musaceae">Musaceae</option>
+                <option value="Ebenaceae">Ebenaceae</option>
+                <option value="Malvaceae">Malvaceae</option>
+                <option value="Ericaceae">Ericaceae</option>
+                <option value="Actinidiaceae">Actinidiaceae</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <label for="familySelect2" class="form-label">Select Second Family:</label>
+              <select id="familySelect2" class="form-select">
+                <option value="Rosaceae">Rosaceae</option>
+                <option value="Rutaceae">Rutaceae</option>
+                <option value="Solanaceae">Solanaceae</option>
+                <option value="Musaceae">Musaceae</option>
+                <option value="Ebenaceae">Ebenaceae</option>
+                <option value="Malvaceae">Malvaceae</option>
+                <option value="Ericaceae">Ericaceae</option>
+                <option value="Actinidiaceae">Actinidiaceae</option>
+              </select>
+            </div>
+          </div>
           <div class="row align-items-center justify-content-center">
             <div class="col">
               <button
                 id="fetchButton1"
                 type="button"
                 class="btn btn-success btn-lg"
-                onclick="fetchDataAndSave(('Rosaceae'))"
               >
                 Download 1st JSON
               </button>
@@ -34,7 +61,6 @@
                 id="fetchButton2"
                 type="button"
                 class="btn btn-success btn-lg"
-                onclick="fetchDataAndSave(('Rutaceae'))"
               >
                 Download 2st JSON
               </button>
@@ -44,7 +70,6 @@
               id="showResultButton"
               type="button"
               class="btn btn-lg bg-warning"
-              onclick="showDataResult(('Rosaceae'))"
             >
               Show Result
             </button>
